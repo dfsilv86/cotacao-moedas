@@ -5,9 +5,9 @@ export default props => {
 
     const array = ["brasil", "argentina", "eua", "ue", "chile"];
 
-    const images = array.map(image => {
-        return <img key={image} src={require(`./img/${image}.png`)} className="img-responsive" />
-    });
+    // const images = array.map(image => {
+    //     return <img key={image} src={require(`./img/${image}.png`)} className="img-responsive" />
+    // });
 
     return (
 

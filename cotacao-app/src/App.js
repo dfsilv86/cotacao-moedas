@@ -27,7 +27,14 @@ class App extends Component {
   render() {
 
     var { isLoaded, cotacoes } = this.state;
+    var result = [];
 
+    if (isLoaded) {
+      for (var i in cotacoes)
+        result.push([cotacoes[i]]);
+
+      console.log(result);
+    }
 
     return (
       <div className="App">
