@@ -1,13 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Card from './components/Card'
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
 
-    </div>
-  );
+  constructor(props) {
+    super(props);
+    this.state = {
+      cotacoes: [],
+      isLoaded: false,
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://economia.awesomeapi.com.br/json/all')
+      .then(res => res.json())
+      .then(json => {
+        this.setState({
+          isLoaded: true,
+          cotacoes: json
+        })
+      })
+
+  }
+
+  render() {
+
+    var { isLoaded, cotacoes } = this.state;
+
+
+    return (
+      <div className="App">
+
+      </div>
+    );
+  }
 }
 
 export default App;
