@@ -1,0 +1,24 @@
+.Cotacao{
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.Cotacao .Title {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.Cotacao .Content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
