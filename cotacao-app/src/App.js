@@ -36,10 +36,8 @@ class App extends Component {
         result.push([cotacoes[i]]);
 
       const resultFiltered = result.filter((r) => {
-        return filter.indexOf(r[0].code) != - 1;
+        return filter.indexOf(r[0].code) !== -1;
       });
-
-      console.log(resultFiltered);
 
       for (const item of resultFiltered) {
         teste.push(

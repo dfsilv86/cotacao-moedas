@@ -1,9 +1,17 @@
 .App .Cotacoes{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .App .Img {
   width: 60px;
   height: 60px;
+}
+
+.button {
+  background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+  justify-content: center;
+ margin: 2px;
 }
